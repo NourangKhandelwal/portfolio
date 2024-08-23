@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="bootstrap-grid.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Portfolio</div>
+            <div class="menu-toggle"><i class="bi bi-list"></i></div>
+            <div class="right">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <section>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-6 second-content">
+                    <h1>About Me</h1>
+                    <h3>Welcome to My Portfolio</h3> 
+                    <p>I am a dedicated third-year student with a strong passion for web development and design. Over the years, I have honed my skills in creating visually appealing and user-friendly websites. My journey in web development began with a curiosity for how websites work, and it has evolved into a commitment to mastering both the technical and aesthetic aspects of the field.</p>
+                    <p>I am proficient in HTML, CSS, and JavaScript, and I am continuously expanding my knowledge by exploring modern frameworks and libraries such as React, Vue.js, and Node.js. My design philosophy revolves around creating intuitive user experiences that are both functional and aesthetically pleasing. I have a keen eye for detail and a deep appreciation for the intersection of technology and creativity.</p>
+                    <p>Currently, I am focused on making my skills more professional by working on various projects, collaborating with peers, and staying updated with the latest industry trends. My goal is to become a versatile web developer and designer who can contribute to innovative and impactful web solutions.</p>
+                    <p>I build beautiful and functional websites. I am a passionate frontend developer with a knack for crafting user-friendly interfaces and bringing ideas to life on the web.</p>
+                </div>
+                <div class="col-lg-6 second-image">
+                    <img src="images/1713202610750.jpg" alt="Profile Picture">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+      
+        menuToggle.addEventListener('click', () => {
+          nav.classList.toggle('nav-active');
+        });
+      </script> 
+</body>
+</html>

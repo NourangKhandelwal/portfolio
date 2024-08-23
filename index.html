@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&family=Poppins:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left"><a href="index.html">Portfolio</a></div>
+            <div class="menu-toggle"><i class="bi bi-list"></i></div>
+            <div class="right">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </nav>          
+    </header>
+    <main>
+        <section class="first">
+            <div class="leftsection firstbg">
+                <p>Hi, I'm <span class="namecolor">&lt;/&gt;Nourang Khandelwal</span></p>
+                <p>and I'm a <span id="element"></span></p>
+                <div>
+                    <button class="button">
+                        <span class="button_lg">
+                            <span class="button_sl"></span>
+                            <span class="button_text"><a href="Resume Nk.pdf" download="download">Download Resume</a></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="images/photo.png.jpg" alt="Profile Picture">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Nourang Khandelwal Portfolio || All Rights Reserved</p>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element',{strings:['Frontend Developer'],typeSpeed:50});
+    </script>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+      
+        menuToggle.addEventListener('click', () => {
+          nav.classList.toggle('nav-active');
+        });
+      </script>      
+</body>
+</html>
